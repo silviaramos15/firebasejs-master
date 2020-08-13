@@ -1,0 +1,22 @@
+/* GENERAL STYLES */
+* {
+box-sizing: border-box;
+}
+
+/* NAVIGATION */
+
+header {
+	width: 100%;
+}
+nav p::before {
+	content: url(..images/svg/star-solid.svg);
+	margin-right: 3px;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+button {
+	display: none;
+}
