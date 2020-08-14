@@ -18,6 +18,8 @@ img {
 	max-width: 100%;
 }
 
+
+
 /* NAVIGATION */
 
 header {
@@ -87,8 +89,11 @@ ul li {
 	display: block;
 	margin: 0 auto;
 	padding-bottom: 30px;
+	transition: .5s ease-in-out;
 }
-
+.about img:hover {
+	transform: scale(1.1);
+}
 .about h1 {
 	margin-bottom: 15px;
 }
@@ -100,6 +105,7 @@ ul li {
 		border-radius: 5px;
 		background-color: #3dafbe;
 		color: #ffff;
+		transition: filter .5s ease-in-out;
 }
 
 /* MAIN - 2n BLOCK - BLOCK */
@@ -130,8 +136,36 @@ ul li {
 	width: 80%;
 	margin: 0 auto;
 }
+.col h4 {
+padding-left: 30px;
+}
+.col-1 h4 {
+	background-image: url('../images/svg/tachometer-alt-solid.svg');
+	background-repeat: no-repeat;	
+}
+.col-2 h4 {
+	background-image: url('../images/svg/lock-solid.svg');
+	background-repeat: no-repeat;	
+}
 
+.col-3 h4 {
+	background-image: url('../images/svg/check-solid.svg');
+	background-repeat: no-repeat;	
+}
 
+.col-4 h4 {
+	background-image: url('../images/svg/buffer-brands.svg');
+	background-repeat: no-repeat;	
+}
+
+.col-5 h4 {
+	background-image: url('../images/svg/box-open-solid.svg');
+	background-repeat: no-repeat;	
+}
+.col-6 h4 {
+	background-image: url('../images/svg/network-wired-solid.svg');
+	background-repeat: no-repeat;	
+}
 
 /* MEDIA QUERIES */
 
@@ -159,7 +193,7 @@ ol a {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
-	border-bottom: 3px solid #ffca99;
+	border-bottom: 5px solid #ffca99;
 }
 
 .about img {
@@ -172,6 +206,10 @@ ol a {
 }
 .logo {
 	align-self: flex-end;
+}
+ol a:hover {
+	color: #4a463f;
+	font-weight: 700;
 }
 /* MAIN - 2nd BLOCK - COLUMNS */
 .columns {
@@ -216,8 +254,11 @@ ol a {
 		border-radius: 5px;
 		background-color: #3dafbe;
 		color: #ffff;
+		transition: filter .6s ease-in-out;
 	}
-
+	button:hover {
+		filter: brightness(110%);
+	}
 	main {
 		
 		margin: 0 auto;
