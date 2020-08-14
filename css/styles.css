@@ -52,8 +52,9 @@ nav {
 .nav li {
 	display: block;
 	margin: 0 auto;
-	text-transform: uppercase;	
+	text-transform: uppercase;		
 }
+
 ol a {
 	display: block;
 	border-bottom: 1px solid #4a463F;
@@ -64,9 +65,14 @@ ol a {
 .links img {
 	height: 15px;
 	margin-top: 20px;
-}.nav a:hover {
+}
+.nav a {
+	transition: .3s ease-in-out;
+}
+.nav a:hover {
 	color: #ffff;
 	background-color: #4a463F;
+	border: none;
 }
 
 ul li {
@@ -255,6 +261,7 @@ ol a:hover {
 		background-color: #3dafbe;
 		color: #ffff;
 		transition: filter .6s ease-in-out;
+		
 	}
 	button:hover {
 		filter: brightness(110%);
